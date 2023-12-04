@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    tools:context="com.example.group42_real_final.MainActivity">
+
+
+    <!--    <android.support.design.widget.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:hint="@string/select"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/auto_complete_txt"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:inputType="none"/>-->
+
+
+
+<!--    UNION BUTTONS-->
+
+
+    <Button
+        android:id="@+id/busy_union"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="313dp"
+        android:backgroundTint="@color/colorOrange"
+        android:text="Busy"
+        android:onClick="onUnBusyClick"
+
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.182" />
+
+
+    <Button
+        android:id="@+id/neutral_union"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="313dp"
+        android:text="Neutral"
+        android:backgroundTint="@color/colorOrange"
+        android:onClick="onUnNeutralClick"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <Button
+        android:id="@+id/empty_union"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="313dp"
+        android:text="Empty"
+        android:backgroundTint="@color/colorOrange"
+        android:onClick="onUnEmptyClick"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.182" />
+
+
+    <!-- GRAINGER BUTTONS -->
+
+
+    <Button
+        android:id="@+id/busy_grainger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="313dp"
+        android:onClick="onGrBusyClick"
+        android:backgroundTint="@color/colorOrange"
+        android:text="Busy"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <Button
+        android:id="@+id/neutral_grainger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="313dp"
+        android:text="Neutral"
+        android:backgroundTint="@color/colorOrange"
+        android:onClick="onGrNeutralClick"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <Button
+        android:id="@+id/empty_grainger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="313dp"
+        android:text="Empty"
+        android:backgroundTint="@color/colorOrange"
+        android:onClick="onGrEmptyClick"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.486" />
+
+
+    <!-- ARC -->
+
+    <!-- CAFE BENE -->
+
+    <!--    <Switch-->
+<!--        android:id="@+id/nightModeSwitch"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Night Mode"-->
+<!--        android:checked="false" />-->
+
+    <Button
+        android:id="@+id/busy_arc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorOrange"
+        android:onClick="onARCBusyClick"
+        android:text="Busy"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <Button
+        android:id="@+id/neutral_arc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onARCNeutralClick"
+        android:text="Neutral"
+        android:backgroundTint="@color/colorOrange"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <Button
+        android:id="@+id/empty_arc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onARCEmptyClick"
+        android:text="Empty"
+        android:backgroundTint="@color/colorOrange"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <Button
+        android:id="@+id/busy_cafe_bene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorOrange"
+        android:onClick="onCBBusyClick"
+        android:text="Busy"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CafeBene"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <Button
+        android:id="@+id/neutral_cafe_bene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCBNeutralClick"
+        android:text="Neutral"
+        android:backgroundTint="@color/colorOrange"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.586" />
+
+    <Button
+        android:id="@+id/empty_cafe_bene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCBEmptyClick"
+        android:text="Empty"
+        android:backgroundTint="@color/colorOrange"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empty_arc"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Group42_real_final.AppBarOverlay"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.Group42_real_final.PopupOverlay" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="401dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:inputType="textPersonName"
+            android:text="                 UIU-SEATS"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/fab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Union"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/include"-->
+
+<!--        tools:layout_editor_absoluteX="54dp"-->
+<!--        tools:layout_editor_absoluteY="107dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/ARC"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="ARC"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/include"-->
+
+<!--        tools:layout_editor_absoluteX="61dp"-->
+<!--        tools:layout_editor_absoluteY="289dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/CafeBene"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Cafe Bene"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/include"-->
+
+<!--        tools:layout_editor_absoluteX="61dp"-->
+<!--        tools:layout_editor_absoluteY="390dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/Grainger"-->
+<!--        android:layout_width="51dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:text="Grainger"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/include"-->
+
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/Title"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="29dp"-->
+<!--        android:layout_marginEnd="160dp"-->
+<!--        android:fontWeight="400"-->
+
+<!--        android:text="UIU-Seats"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/include"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+    <TextView
+        android:id="@+id/union"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Union:"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <TextView
+        android:id="@+id/Grainger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grainger:"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <TextView
+        android:id="@+id/ARC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARC:"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <TextView
+        android:id="@+id/CafeBene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cafe Bene: "
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <TextView
+        android:id="@+id/UnionValue"
+        android:layout_width="122dp"
+        android:layout_height="28dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <TextView
+        android:id="@+id/GraingerValue"
+        android:layout_width="122dp"
+        android:layout_height="28dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324" />
+
+    <TextView
+        android:id="@+id/ARCValue"
+        android:layout_width="122dp"
+        android:layout_height="28dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <TextView
+        android:id="@+id/BeneValue"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
